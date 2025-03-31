@@ -27,11 +27,25 @@
             font-size: small;
             color: black;
          }
+         .fade {
+            opacity: 0;
+            animation: fadeIn 3s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
       </style>
    <body>
       <div id="container">
         <div id="layout">
             <div id="one">
+               <div class="fade">
                <img src="https://github.com/democracy-2025/democracy/blob/main/Layout.jpg?raw=true" height="340" width="220" alt="Democracy Road Art">
                <br>
                <br>
@@ -190,7 +204,8 @@
                <br>
                <img src="https://github.com/democracy-2025/democracy/blob/main/Disabled_child.jpg?raw=true" height="340" width="220" alt="Speak for Yourself"> 
             </div>
-        </div>
+         </div>
       </div>
-   </body>
+   </div>
+</body>
 </html>
