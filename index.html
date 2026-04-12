@@ -1,65 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Parkplace Proposal</title>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Small Screen jfarmsboulder Website</title>
    </head>
       <style>
-         #container {
+         body {
+            /*background-color: #8AA5C1;*/
+            background-color: lightgray;
+         }
+         /*#container {
             position: absolute;
             max-width: 23em;
             margin: 2em auto;
             box-sizing: border-box;
+        } */
+         #container {
+            max-width: 30em;
+            margin: auto;
+        } 
+        #layout {
+            text-align: left;
         }
+         /*#one {
+            background-color: lemonchiffon;
+            padding: .5em;
+            border-style: solid;
+            border-width: .125em;
+            border-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            color: black;
+         }*/
+         .USA {
+                font-size: small;
+                box-shadow: 0 4px 2px rgba(0,0,0,.5);
+                border-style: solid;
+                border-width: .125em;
+                border-radius: .5em;
+                border-color: black;
+                background-color: aquamarine;
+                position: relative;
+                top: 0px;
+                transition:
+                background-color 0.5s ease-in,
+                border-color 0.5s ease-in,
+                top 0.2s,
+                box-shadow 0.2s;
 
-        
-
-         /*CSS Style Here*/
-         .absolute-btn0 {
-      position: absolute;
-      top: 29.5em;
-      left: 27em; 
+            }
+            .USA:hover, .USA:focus {
+            /*.USA:hover {*/
+            cursor: pointer;
+            background-color: lightgreen;
+            /*background-color: #c6de89;*/
+            border-color: darkkhaki;
+            }
+            /*.USA:focus { 
+            background-color: #c6de89;
+            border-color: #a3c058;
+            }*/
+            .USA:active {
+            /*background-color: limegreen;*/
+            top: 3px;
+            box-shadow: 0 1px 2px rgba(0,0,0,.5);
+            }        
+         img {
+            border-width: .5em;
+            border-style: solid;
+            border-color: lemonchiffon;
+            float: left;
          }
-         /*.absolute-btn1 {
-      position: absolute;
-      top: 35em;
-      left: 34em; 
+         #B {
+            position: absolute;
+            top: 5em;
+            left: 35em;
          }
-         .absolute-btn2 {
-      position: absolute;
-      top: 42em;
-      left: 33em; 
+         #C {
+            position: absolute;
+            top: 2em;
+            left: 14em;
+            animation: bobble .5s 3 ease-in;
          }
-         .absolute-btn3 {
-      position: absolute;
-      top: 45.5em;
-      left: 24em; 
+         /*@keyframes bobble {
+    0% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-1px);
+    }
+}
+         #lawn {
+            z-index: 50;
+            position: absolute;
+            background: khaki;
+            border: .125em solid darkgray;
          }
-         .absolute-btn4 {
-      position: absolute;
-      top: 32em;
-      left: 18em; 
+         #monarch {
+            z-index: 50;
+            position: absolute;
+            background: khaki;
+            border: .125em solid darkgray;
          }
-         .absolute-btn5 {
-      position: absolute;
-      top: 40em;
-      left: 17em; 
+         iframe {
+            border: none;  
+         }
+         td {
+            text-align: center;
+         }
+        #borderbox {
+            background: khaki;
+            width: 25em;
+            height: 22em;
+            padding: .125em;
+            border: .125em solid darkgray;
+            margin: auto;
+         }
+         #senzaiPlants {
+            line-height: .125em;
          }*/
       </style>
    <body>
       <div id="container">
-   <!---HTML Statements Here--->>
-      <button class="absolute-btn0">Order</button>
-      <!---<button class="absolute-btn1">Order</button>
-      <button class="absolute-btn2">Order</button>
-      <button class="absolute-btn3">Order</button>
-      <button class="absolute-btn4">Order</button>
-      <button class="absolute-btn5">Order</button>--->
-   <img src = "https://github.com/democracy-2025/democracy/blob/main/642.jpg?raw=true" height = 1000 width = 1200 alt = "642 Floor Plan"></img>
-      <script>
-      <!---JavaScript Statements Here--->
-      </script>
+        <div id="layout">
+            <!---<div id="one">--->
+               <img src = "https://github.com/democracy-2025/democracy/blob/main/642.jpg?raw=true" height = 220 width = 340 alt = "642 Floor Plan"></img>
+               <p id="B"><button class="USA">Order</button></p>
+            <!---</div>--->
+        </div>
       </div>
    </body>
 </html>
