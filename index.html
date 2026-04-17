@@ -42,7 +42,7 @@
             color: black;
          }*/
          .USA {
-                font-size: small;
+                font-size: large;
                 box-shadow: 0 4px 2px rgba(0,0,0,.5);
                 border-style: solid;
                 border-width: .125em;
@@ -56,6 +56,7 @@
                 border-color 0.5s ease-in,
                 top 0.2s,
                 box-shadow 0.2s;
+                
 
             }
             .USA:hover, .USA:focus {
@@ -64,6 +65,7 @@
             background-color: lightgreen;
             /*background-color: #c6de89;*/
             border-color: darkkhaki;
+            animation: bobble .5s 3 ease-in;
             }
             /*.USA:focus { 
             background-color: #c6de89;
@@ -85,13 +87,18 @@
             top: 15em;
             left: 16.5em;
          }
-         #C {
+         /*#C {
             position: absolute;
-            top: 2em;
-            left: 14em;
-            animation: bobble .5s 3 ease-in;
+            top: 10em;
+            left: 25em;
+         }*/
+         dialog {
+            border-style: solid;
+            border-width: .125em;
+            border-color: black;
+            background-color:lightgray;
          }
-         /*@keyframes bobble {
+        /* @keyframes bobble {
     0% {
         transform: translateY(-5px);
     }
@@ -141,8 +148,37 @@
             <!---<div id="one">--->
                <img src = "https://github.com/democracy-2025/democracy/blob/main/642.jpg?raw=true" height = 562 width = 688 alt = "642 Floor Plan"></img>
                <p id="B"><button class="USA">Order</button></p>
+               <!---<p id="C"><button class="USA">Order</button></p>--->
             <!---</div>--->
         <!---</div>--->
+        <dialog id="order">
+            <p>Place Order</p>
+               <dl>
+                  <dd><input type="radio" name="entree" value="Hambuger" checked>Hambuger</dd>
+                  <dd><input type="radio" name="entree" value="Crispy Chicken Salad">Crispy Chicken Salad</dd>
+                  <dd><input type="radio" name="entree" value="Spaghetti">Spagjhetti</dd>
+                  <dd><input type="radio" name="entree" value="Ice Cream">Ice Cream</dd>
+               </dl>
+                <button class="USA" type="reset" id="cancelorder">Submit</button>
+        </dialog>
+        <script>
+            document.getElementById("B").addEventListener("click",discreption11,false);
+           function discreption11() {
+                dialog = document.getElementById("order");
+                dialog.show();   
+           };
+           document.getElementById("cancelorder").addEventListener("click",discreption12,false);
+           function discreption12() {
+                dialog = document.getElementById("order");
+                dialog.close();   
+           };
+        </script>
       </div>
    </body>
 </html>
+
+
+
+
+
+
